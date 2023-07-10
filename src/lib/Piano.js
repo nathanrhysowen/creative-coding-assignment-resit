@@ -66,15 +66,7 @@ class Piano {
     );
   }
 
-  // Hide the text on the natural keys
-  hideText() {
-    this.naturalKeys.forEach((key) => key.hideKeyText());
-  }
 
-  // Render the text on the natural keys 
-  renderText(font) {
-    this.naturalKeys.forEach((key) => key.renderKeyText(font));
-  }
 
   // Get the piano group
   getPianoGroup() {
