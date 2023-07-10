@@ -50,30 +50,7 @@ class Key {
     this.keyGroup.add(this.keyMesh);
   }
 
-  // Hide the text on the key
-  hideKeyText() {
-    this.textMesh.visible = false;
-  }
-
-  // Render the text on the key using the provided font
-  renderKeyText(font) {
-    if (this.textMesh) {
-      this.textMesh.visible = true;
-    } else {
-      const geometry = new TextGeometry(this.note[0], {
-        font,
-        size: 4,
-        height: 2,
-        
-      });
-      let material = new MeshNormalMaterial();
-      this.textMesh = new Mesh(geometry, material);
-      this.textMesh.position.z = 2;
-      this.textMesh.position.x = -1.5;
-      this.textMesh.position.y = -18;
-      this.keyGroup.add(this.textMesh);
-    }
-  }
+ 
 
   // Rotate the keys
   rotateAroundWorldAxis(rotation) {
