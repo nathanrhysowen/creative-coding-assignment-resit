@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/src/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite App</title>
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <div id="root"></div>
+    
+    <div id="textBox">
+      
+      <div id ="flatkeycontrols">
+       <p id = "header">Key <br> controls</p>
+       <p>Flat keys: </p>
+       <p>Db3 = 2 </p>
+       <p>Eb3 = 3 </p>
+       <p>Gb3 = 5 </p>
+       <p>Ab3 = 6 </p>
+       <p>Bb3 = 7 </p>
+       <p>Db4 = s </p>
+       <p>Eb4 = d </p>
+       <p>Gb4 = g </p>
+       <p>Ab4 = h </p>
+       <p>Bb4 = j </p>
+
+      </div>
+
+      <div id ="naturalkeycontrols">
+        <p>Natural keys: </p>
+        <p>C3 = q </p>
+        <p>D3 = w </p>
+        <p>E3 = e </p>
+        <p>F3 = r </p>
+        <p>G3 = t </p>
+        <p>A3 = y </p>
+        <p>B3 = u </p>
+        <p>C4 = z </p>
+        <p>D4 = x </p>
+        <p>E4 = c </p>
+        <p>F4 = v </p>
+        <p>G4 = b </p>
+        <p>A4 = n </p>
+        <p>B4 = m </p>
+ 
+       </div>  
+      
+
+    </div>
+    
+    <button id="toggleButton" onclick="toggleTextBox()">X</button>
+    
+    <script>
+    function toggleTextBox() {
+      var textBox = document.getElementById("textBox");
+      if (textBox.style.display === "none") {
+        textBox.style.display = "block";
+      } else {
+        textBox.style.display = "none";
+      }
+    }
+    </script>
+    
+    <script type="module" src="/src/main.jsx"></script>
+
+   
+  </body>
+</html>
